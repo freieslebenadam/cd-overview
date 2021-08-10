@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Počítač: 127.0.0.1
--- Vytvořeno: Úte 10. srp 2021, 15:48
+-- Vytvořeno: Úte 10. srp 2021, 21:00
 -- Verze serveru: 10.4.20-MariaDB
 -- Verze PHP: 8.0.9
 
@@ -33,7 +33,7 @@ CREATE TABLE `cds` (
   `ID` int(11) NOT NULL,
   `Author` varchar(50) NOT NULL,
   `Album` varchar(50) NOT NULL,
-  `Picture` longtext NOT NULL DEFAULT '\'resources/assets/default_cover.jpg\'',
+  `Picture` varchar(250) NOT NULL DEFAULT '''\\''resources/assets/default_cover.jpg\\''''',
   `Genre` varchar(50) DEFAULT NULL,
   `ReleaseDate` varchar(5) DEFAULT NULL,
   `Price` decimal(15,2) DEFAULT NULL,
