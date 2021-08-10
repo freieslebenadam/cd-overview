@@ -32,11 +32,19 @@ if (!$cd) {
     </section>
     <section class="cd-detail-footer">
         <p>
-            <i class="far fa-star rating-star"></i>
-            <i class="far fa-star rating-star"></i>
-            <i class="far fa-star rating-star"></i>
-            <i class="far fa-star rating-star"></i>
-            <i class="far fa-star rating-star"></i>
+            <?php
+            $filledStar = '<i class="fas fa-star rating-star"></i>';
+            $emptyStar = '<i class="far fa-star rating-star"></i>';
+
+            $emptyStarCount = 5 - $cd['Rating'];
+
+            for ($filled = 1; $filled <= $cd['Rating']; $filled++) {
+                echo $filledStar;
+            }
+            for ($empty = 0; $empty < $emptyStarCount; $empty++) {
+                echo $emptyStar;
+            }
+            ?>
         </p>
         <p>
             Cena: <?php if($cd['Price'] !== null) { echo "<strong>€".$cd['Price']."</strong>"; } else { echo "Není uvedeno"; } ?>

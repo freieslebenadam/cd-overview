@@ -99,10 +99,8 @@ main {
 i.fas {
     color: var(--rating);
 }
-i.far:hover {
-    color: var(--rating);
-}
 i:hover {
+    text-shadow: 0 0 .15em rgba(0, 0, 0, 0.35);
     cursor: pointer;
 }
 
