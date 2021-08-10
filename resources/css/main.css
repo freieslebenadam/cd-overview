@@ -74,6 +74,9 @@ main {
     background-position: center;
     background-size: cover;
 }
+.print-pic {
+    display: none;
+}
 .cd-detail-body, .cd-detail-footer {
     padding: 1.5rem 1rem;
 }

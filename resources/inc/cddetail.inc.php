@@ -15,6 +15,7 @@ if (!$cd) {
 
 <article class="cd-detail">
     <section class="cd-detail-header">
+        <img class="print-pic" src="<?= $cd['Picture'] ?>" width="200px" />
         <div class="cd-pic" style="background-image: url('<?= $cd['Picture'] ?>');"></div>
     </section>
     <section class="cd-detail-body">
@@ -31,7 +32,7 @@ if (!$cd) {
         </p>
     </section>
     <section class="cd-detail-footer">
-        <p>
+        <p> <b>Hodnocení:</b> <br>
             <?php
             $filledStar = '<i class="fas fa-star rating-star"></i>';
             $emptyStar = '<i class="far fa-star rating-star"></i>';

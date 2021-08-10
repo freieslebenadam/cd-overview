@@ -7,6 +7,7 @@ $cds = $cv->getAllCds();
     <?php foreach ($cds as $cd): ?>
     <div class="cd-card">
         <div class="cd-card-header">
+            <img class="print-pic" src="<?= $cd['Picture'] ?>" width="100px" />
             <div class="cd-pic" style="background-image: url('<?= $cd['Picture'] ?>');"></div>
         </div>
         <div class="cd-card-body">

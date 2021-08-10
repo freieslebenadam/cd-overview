@@ -1,0 +1,46 @@
+/* DETAIL */
+header {
+    display: none;
+}
+.cd-detail {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.cd-detail-header {
+    height: fit-content;
+}
+.print-pic {
+    display: block;
+}
+main {
+    margin-top: 2rem;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* CD CARDS */
+.cd-card {
+    background-color: transparent;
+    border-radius: 0;
+    text-align: left;
+    margin: 1rem 0;
+    width: 100%;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+}
+.cd-card .cd-card-header {
+    height: fit-content;
+    width: fit-content;
+}
+.cd-card .cd-card-body {
+    border: none;
+    margin-left: 1rem;
+}
+.cd-card-footer {
+    display: none;
+}
