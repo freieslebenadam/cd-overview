@@ -32,11 +32,11 @@ if (!$cd) {
     </section>
     <section class="cd-detail-footer">
         <p>
-            <i class="fas fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
+            <i class="far fa-star rating-star"></i>
+            <i class="far fa-star rating-star"></i>
+            <i class="far fa-star rating-star"></i>
+            <i class="far fa-star rating-star"></i>
+            <i class="far fa-star rating-star"></i>
         </p>
         <p>
             Cena: <?php if($cd['Price'] !== null) { echo "<strong>€".$cd['Price']."</strong>"; } else { echo "Není uvedeno"; } ?>
