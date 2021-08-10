@@ -1,0 +1,25 @@
+/* NAVBAR */
+header {
+    width: 100%;
+    background-color: var(--dark);
+    padding: 1rem 0;
+    box-shadow: 0 .1em .35em rgba(0,0,0,0.25);
+}
+nav a {
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8em;
+    transition: var(--transition);
+}
+nav a:hover {
+    color: var(--primary);
+}
+
+/* CD CARD */
+.cd-card {
+    background-color: var(--gray1);
+    border: 1px solid var(--gray2);
+    border-radius: .5em;
+    text-align: center;
+}

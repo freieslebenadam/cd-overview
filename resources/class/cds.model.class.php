@@ -12,4 +12,12 @@ class CdsModel extends Database {
         $result = $statement->fetchAll();
         return $result;
     }
+
+    // Get CD by Id
+    protected function fetchCdById(int $id) {
+        $sql = "SELECT * FROM ".$this->tb." WHERE ID = :id";
+        $statement = $this->connect()->prepare($sql);
+        $result = $statement->execute([":id" => $id]);
+        return $result;
+    }
 }
