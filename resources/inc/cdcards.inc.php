@@ -1,13 +1,23 @@
 <?php require_once 'resources/inc/cds.class.inc.php'; 
-    $cv = new CdsView();
-    $cds = $cv->getAllCds();
-    ?>
+$cv = new CdsView();
+$cds = $cv->getAllCds();
+?>
+
+<section class="cards">
+
     <?php foreach ($cds as $cd): ?>
     <div class="cd-card">
-        <img src="<?= $cd['Picture'] ?>" width="160px" />
-        <h2><?= $cd['Album'] ?></h2>
-        <h3><?= $cd['Author'] ?></h3>
-        <p><?= $cd['ReleaseDate'] ?></p>
-        <p><?= $cd['Genre'] ?></p>
+        <div class="cd-card-header">
+            <div class="cd-pic" style="background-image: url('<?= $cd['Picture'] ?>');"></div>
+        </div>
+        <div class="cd-card-body">
+            <h2><?= $cd['Album'] ?></h2>
+            <p><?= $cd['Author'] ?></p>
+        </div>
+        <div class="cd-card-footer">
+            <a href="/" class="btn btn-primary">Více</a>
+        </div>
     </div>
-<?php endforeach; ?>
+    <?php endforeach; ?>
+
+</section>

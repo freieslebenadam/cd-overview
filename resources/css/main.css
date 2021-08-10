@@ -1,7 +1,7 @@
 /* NAVBAR */
 header {
     width: 100%;
-    background-color: var(--dark);
+    background-color: var(--primary);
     padding: 1rem 0;
     box-shadow: 0 .1em .35em rgba(0,0,0,0.25);
 }
@@ -13,13 +13,44 @@ nav a {
     transition: var(--transition);
 }
 nav a:hover {
-    color: var(--primary);
+    text-shadow: 0 0 .05em var(--white);
+}
+
+/* MAIN */
+main {
+    margin-top: 2rem;
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* CD CARD */
 .cd-card {
     background-color: var(--gray1);
     border: 1px solid var(--gray2);
-    border-radius: .5em;
+    border-radius: .35em;
     text-align: center;
+    width: 15rem;
+    margin: .5rem;
+}
+.cd-card .cd-card-header {
+    height: 200px;
+    width: 100%;
+}
+.cd-card .cd-card-header .cd-pic {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+}
+.cd-card .cd-card-body {
+    background-color: var(--white);
+    border-top: 1px solid var(--gray2);
+    border-bottom: 1px solid var(--gray2);
+    padding: 1rem 0;
+}
+.cd-card .cd-card-footer .btn{
+    display: block;
 }
