@@ -1,0 +1,8 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# CD Detail (slug)
+RewriteRule ^([a-z\-]+)$ detail.php?slug=$1 [QSA,NC,L]

@@ -17,6 +17,9 @@
     --gray2: rgb(180, 180, 180);
     --white: #FFF;
     --transition: 80ms ease;
+    --success: #2fb380;
+    --warning: #cfa152;
+    --danger: #da292e;
 } 
 
 body {
