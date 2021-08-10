@@ -13,4 +13,10 @@ class CdsView extends CdsModel {
         $result = $this->fetchCdById($id);
         return $result;
     }
+
+    // Get CD by Slug
+    public function getCdBySlug(string $slug) {
+        $result = $this->fetchCdBySlug($slug);
+        return $result;
+    }
 }

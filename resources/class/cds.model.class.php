@@ -17,7 +17,17 @@ class CdsModel extends Database {
     protected function fetchCdById(int $id) {
         $sql = "SELECT * FROM ".$this->tb." WHERE ID = :id";
         $statement = $this->connect()->prepare($sql);
-        $result = $statement->execute([":id" => $id]);
+        $statement->execute([":id" => $id]);
+        $result = $statement->fetch();
+        return $result;
+    }
+
+    // Get CD by Slug
+    protected function fetchCdBySlug(string $slug) {
+        $sql = "SELECT * FROM ".$this->tb." WHERE Slug = :slug";
+        $statement = $this->connect()->prepare($sql);
+        $statement->execute([":slug" => $slug]);
+        $result = $statement->fetch();
         return $result;
     }
 }

@@ -15,7 +15,7 @@ $cds = $cv->getAllCds();
             <p><?= $cd['Author'] ?></p>
         </div>
         <div class="cd-card-footer">
-            <a href="/" class="btn btn-primary">Více</a>
+            <a href="/<?= $cd['Slug'] ?>" class="btn btn-primary">Více</a>
         </div>
     </div>
     <?php endforeach; ?>
