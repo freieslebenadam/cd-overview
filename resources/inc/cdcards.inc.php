@@ -4,7 +4,6 @@ $cds = $cv->getAllCds();
 ?>
 
 <section class="cards">
-
     <?php foreach ($cds as $cd): ?>
     <div class="cd-card">
         <div class="cd-card-header">
@@ -19,5 +18,4 @@ $cds = $cv->getAllCds();
         </div>
     </div>
     <?php endforeach; ?>
-
 </section>

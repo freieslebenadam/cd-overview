@@ -8,7 +8,7 @@
 
     <main>
         <div class="container">
-            <?php require_once 'resources/inc/carddetail.inc.php'; ?>
+            <?php require_once 'resources/inc/cddetail.inc.php'; ?>
         </div>
     </main>
 </body>

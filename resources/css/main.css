@@ -54,3 +54,81 @@ main {
 .cd-card .cd-card-footer .btn{
     display: block;
 }
+
+/* CD Detail */
+.cd-detail {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray2);
+    border-radius: .35rem;
+    max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cd-detail-header {
+    height: 25rem;
+}
+.cd-pic {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.cd-detail-body, .cd-detail-footer {
+    padding: 1.5rem 1rem;
+}
+.cd-detail-footer {
+    background-color: var(--gray1);
+}
+.cd-detail-footer p strong {
+    font-size: 1.2em;
+    font-weight: 800;
+}
+.cd-detail .cd-detail-body > p {
+    margin: 1rem 0;
+}
+.album {
+    font-size: 2em;
+    font-weight: 800;
+}
+.author {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+/* Rating */
+i.fas {
+    color: var(--rating);
+}
+
+@media only screen and (min-width: 768px) {
+    /* Cards */
+    .cards {
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .cd-card {
+        margin: .5rem;
+    }
+
+    /* Detail */
+    .cd-detail {
+        flex-direction: row;
+        margin: 0;
+        max-width: 100%;
+        justify-content: space-between;
+    }
+    .cd-detail-header {
+        width: 25rem;
+    }
+    .cd-detail-body {
+        flex: 1;
+    }
+    .cd-detail-footer {
+        text-align: center;
+        min-width: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
