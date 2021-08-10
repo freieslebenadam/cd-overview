@@ -9,7 +9,7 @@ Překládání url probíhá pomocí přepisu Apache pravidel díky `.htaccess` 
 
 ## Instalace
 
-Projekt je třeba spouštět v Apachi prostředí.
+Projekt je třeba spouštět v Apache prostředí.
 
 Pro vytvoření MySQL databáze slouží soubor `cd_overview.sql`.
 
